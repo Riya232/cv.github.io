@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>feedback</title>
+    <style>
+      body{
+      background-color:#a9f1df;
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+  line-height: 2;
+
+width: 100%;
+box-sizing: border-box;
+}
+input{
+  padding: 9px ;
+}
+input[type=submit] {
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 600px;
+}
+  table{
+    margin-left: 400px;
+text-align: center;
+  }
+  img{
+    height: 75px;
+    width: 75px;
+
+  }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <h2 style="color:#21094e; font-family:'Oleo Script', cursive; font-size: 50px; "><img src="design-thinking.jpg" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback</h2>
+
+  <table>
+  <form class="form" action="front.html" method="post">
+    <tr>
+    <td><label for="">Name:</label></td>
+    <td><input type="text" placeholder="your name" required></td>
+    </tr>
+    <tr>
+    <td><label for="">Birth Date:</label></td>
+    <td><input type="date" placeholder="your birth date" required/></td>
+    </tr>
+    <tr>
+    <td><label for="">Email:</label></td>
+    <td><input type="email" placeholder="your email id" required></td>
+    </tr>
+    <tr>
+    <td><label for="">Mobile No.:</label></td>
+    <td><input type="tel" name="number"  minlength="" maxlength="10" size="10" placeholder="your mobile no." required></td>
+    </tr>
+    <tr>
+    <td><label for="myBrowser">Choose your Occupation:</label></td>
+    <td><input list="browsers" id="myBrowser" name="myBrowser" placeholder="your occupation" required/>
+    <datalist id="browsers">
+      <option value="Engineer">
+      <option value="Teacher">
+      <option value="Doctor">
+      <option value="Architect">
+      <option value="Advocate">
+      <option value="Other">
+   </datalist></td>
+   </tr>
+   <tr>
+    <td><label for="">Message:</label></td>
+    <td><textarea name="name" rows="8" cols="10" placeholder="message.."></textarea></td>
+    </tr>
+    </table>
+    <input type="submit" value="Submit" required>
+  </form>
+
+  </body>
+</html>
